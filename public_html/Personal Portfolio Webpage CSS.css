@@ -1,0 +1,724 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 18 Feb 2025, 4:29:21 PM
+    Author     : fayha
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: lavenderblush;
+    font-family: MainFont;
+    zoom: 80%;
+}
+
+@font-face
+{
+    font-family: MainFont;
+    src: url(mainfont.woff);
+}
+
+@font-face
+{
+    font-family: TextFont;
+    src: url(textfont.woff);
+}
+
+@font-face
+{
+    font-family: TimeFont;
+    src: url(WideGamingFont.woff);
+}
+
+.parallax
+{
+    background-image: url("divider2.jpg");
+    min-height: 500px;
+    max-width: 19000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    width: 100%;
+
+}
+
+h1
+{
+    font-size: 85px;
+    color: darkolivegreen;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+h2
+{
+    color: darkolivegreen;
+    border-radius: 25px;
+    font-size: 40px;
+    padding: 10px;
+    display: inline;
+
+}
+
+.subtitle
+{
+    font-size: 85px;
+    color: darkolivegreen;
+    margin-bottom: -10px;
+    padding: 10px;
+    flex: 1;
+}
+
+.subtitle:hover
+{
+    color: rgb(255, 179, 203);
+}
+
+.subtitle2
+{
+    font-size: 85px;
+    color: darkolivegreen;
+    padding: 10px;
+    text-align: center;
+}
+
+.subtitle2:hover
+{
+    color: pink;
+}
+
+h3
+{
+    font-family: TextFont;
+    color: olivedrab;
+    font-stretch: ultra-expanded;
+    text-align: center;
+}
+
+.text
+{
+    font-family: TextFont;
+    color: darkolivegreen;
+    text-align: left;
+    font-weight: bold;
+    flex: 1;
+}
+
+.text2
+{
+    font-family: TextFont;
+    color: darkolivegreen;
+    text-align: center;
+    font-weight: bold;
+    flex: 1;
+}
+
+h1:hover
+{
+    color: rgb(255, 179, 203);
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.title
+{
+    font-stretch: ultra-expanded;
+    font-size: 25px;
+    color: indianred;
+    padding: 20px;
+    margin: 0px;
+}
+
+.navbar
+{
+    position: sticky;
+    top: 0;
+    padding: 6px 6px;
+    background-color: lavenderblush;
+    z-index: 1000;
+}
+.navbar ul
+{
+    list-style-type: none;
+    background-color: darkolivegreen;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.navbar a
+{
+    color: mistyrose;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+}
+
+.navbar a:hover
+{
+    background-color: rgb(255, 179, 203);
+}
+
+.navbar li
+{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.imgofme
+{
+    border-radius: 260px;
+    max-width: 250px;
+    border-top-style: none;
+    border-bottom-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px grey;
+}
+
+.aboutme
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+}
+
+.courses
+{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.section
+{
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px gray;
+    transition: transform 0.3s ease;
+}
+
+.section:hover
+{
+    transform: translateY(-10px);
+
+}
+
+.coursestitle
+{
+    font-family: MainFont;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: indianred;
+    text-align: left;
+}
+
+.coursestext
+{
+    font-family: TextFont;
+    color: darkolivegreen;
+    text-align: left;
+    font-weight: bold;
+}
+
+.liststyle
+{
+    list-style: none;
+}
+
+.form-container
+{
+    background: white;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    width: 450px;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-style
+{
+    position: relative;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+label
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: darkolivegreen;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+    color: mistyrose;
+}
+
+input, textarea
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: mistyrose;
+}
+
+textarea
+{
+    resize: none;
+    height: 80px;
+}
+
+button
+{
+    background-color: indianred;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: darkolivegreen;
+}
+
+footer
+{
+    color: lavenderblush;
+    text-align: right;
+    padding: 20px;
+    background: pink;
+}
+
+.footer-container
+{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info
+{
+    font-family: TextFont;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+/* Blur effect when popup is active */
+body.popup-active #main-content
+{
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.popup-content input
+{
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 27px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    color: darkolivegreen;
+}
+
+.popup
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Show the popup */
+.popup.active
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+body.popup-active {
+    overflow: hidden;
+}
+
+.popup-content
+{
+    background: lavenderblush;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: darkolivegreen;
+}
+
+.popup-content button
+{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.welcome-msg
+{
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+    color: mistyrose;
+    background-color: darkolivegreen;
+}
+
+.form-msg
+{
+    margin-top: 15px;
+    font-size: 16px;
+    color: indianred;
+}
+.form-msg.success
+{
+    color: indianred;
+}
+
+/* Dark Mode Styles*/
+body.dark-mode
+{
+    background-color: #753B41;
+    color: #E8F8D8;
+}
+body.dark-mode,
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode li,
+body.dark-mode div {
+    color: #E8F8D8;
+}
+
+body.dark-mode .form-msg.success,
+body.dark-mode .form-msg
+{
+    color: #753B41;
+}
+
+body.dark-mode h1:hover
+{
+    color: pink;
+}
+
+body.dark-mode h3
+{
+    color: #ccffcc;
+}
+
+body.dark-mode footer
+{
+    background-color: #E8F8D8;
+    color: #753B41;
+}
+
+body.dark-mode footer p
+{
+    color: #753B41;
+}
+
+body.dark-mode .navbar
+{
+    background-color: #753B41;
+}
+
+body.dark-mode .welcome-msg
+{
+    background-color: #E8F8D8;
+    color: #552b2f;
+}
+
+body.dark-mode .popup-content
+{
+    background-color: #753B41;
+    color: #E8F8D8;
+}
+
+body.dark-mode .popup-content input
+{
+    background-color: #753B41;
+    color: #E8F8D8;
+}
+
+body.dark-mode .popup-content button
+{
+    background-color: #E8F8D8;
+    color: #584941;
+}
+
+body.dark-mode .navbar a
+{
+    background-color: #E8F8D8;
+    color: #552b2f;
+}
+
+body.dark-mode .navbar a:hover
+{
+    background-color: pink;
+}
+
+body.dark-mode .title
+{
+    color: pink;
+}
+
+body.dark-mode .section
+{
+    background-color: white;
+}
+
+
+body.dark-mode .section p
+{
+    color: #753B41;
+}
+
+body.dark-mode .section div
+{
+    color: palevioletred;
+}
+
+
+body.dark-mode .form-container
+{
+    background-color: white;
+    color: #753B41;
+    box-shadow: 0 0 20px #4a1e22;
+}
+
+body.dark-mode .form-container input
+{
+    background-color: #753B41;
+    color: #E8F8D8;
+}
+
+body.dark-mode .form-container button
+{
+    background-color: #753B41;
+    color: #E8F8D8;
+}
+
+
+
+body.dark-mode label
+{
+    background-color: #753B41 !important; 
+    color: #E8F8D8 !important;
+}
+
+body.dark-mode button
+{
+    background-color: #E8F8D8;
+    color: #753B41;
+
+}
+
+.toggle
+{
+    padding: 20px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.mode-toggle img
+{
+
+    transition: opacity 0.3s ease;
+}
+
+body.dark-mode .parallax
+{
+    background-image: url("arriety.jpg");
+    min-height: 500px;
+    max-width: 19000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    width: 100%;
+
+}
+
+.scroll-container-wrapper
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.scroll-container
+{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px;
+}
+
+.scroll-container::-webkit-scrollbar
+{
+    display: none;
+}
+
+.section
+{
+    flex: 0 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+#prevBtn, #nextBtn
+{
+    background-color: indianred;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#prevBtn:hover, #nextBtn:hover
+{
+    background-color: pink;
+}
+
+.scroll-container-wrapper
+{
+    max-width: 85%; 
+    margin: auto;
+}
+
+body.dark-mode #prevBtn, body.dark-mode #nextBtn
+{
+    background-color: pink;
+    color: #E8F8D8;
+}
+
+body.dark-mode #prevBtn:hover, body.dark-mode #nextBtn:hover
+{
+    background-color: palevioletred;
+}
+
+.clockicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between icon and clock */
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#clock {
+  font-size: 15px;
+  font-family: TimeFont;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  color: darkolivegreen;
+}
+
+body.dark-mode #clock
+{
+    color: #E8F8D8;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+#scrollToTopBtn img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+#scrollToTopBtn:hover img {
+  transform: scale(1.1);
+}
+
+
+
+

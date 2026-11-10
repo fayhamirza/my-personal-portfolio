@@ -1,0 +1,19 @@
+{
+    "name": "Personal_Portfolio_Webpage",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "fayha",
+    "contributors": [],
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    },
+    "scripts": {
+        "start": "live-server"
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Personal Portfolio Webpage CSS.css"/>
+
+    </head>
+    <body>
+        <div id="welcomeMessage" class="welcome-msg"></div>
+
+        <div id="main-content">
+            <nav class ="navbar">
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+                <div class="clockicon">
+                    <img id="lightIcon" src="light-icon-moon.png" alt="Light Mode" width="50" height="50" style="cursor: pointer; display: none;">
+                    <img id="darkIcon" src="dark-icon-moon.png" alt="Dark Mode" width="50" height="50" style="cursor: pointer; display: inline;">
+                    <div id="clock">00:00:00</div>
+                </div>
+                <div class="title">✿ My Personal Portfolio</div>
+            </nav>
+
+            <br>
+            <br> 
+            <br>
+            <section id="home">
+                <h1>Hello, I'm Fayha!</h1>
+                <h3>Art, Books, & IT Enthusiast</h3>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <div class="parallax"></div>
+            </section>
+
+            <section id="aboutme">
+                <br>
+                <br>
+                <br>
+                <div class="aboutme">
+                    <center><b><div class="subtitle">✿<br>About<br>Me️</div></b></center>
+                    <img class="imgofme" src="me.jpg" width="250" height="300" alt="a picture of me"/>
+                    <p class="text">
+                        My name is Fayha Mirza, and I am 19 years old. Currently, I am studying Information Technology 
+                        with Networking and Security in Ajman University. I am 3 months away from completing my second 
+                        year, and a month away from turning 20 years old! Adulthood is not a far reach from where I am
+                        standing, and growth is a factor in progress. <br><br>During the few hours that I am not nose-deep in a
+                        textbook, I spend my time reading novels from a range of genres or working on my paintings. I 
+                        often thoroughly enjoy a productive session of pilates and a long walk in the morning. <br><br>Family
+                        time is also a must for me! My family consists of my father, my mother, my elder sister, and my 
+                        two highly inquisitive cats that I cherish more than life. Since I am a born-worrier and an 
+                        emotional soul, animals have always been a soft spot for me. Hence, from animals to books, my 
+                        personality has always been of introverted nature. 
+                    </p>
+                </div>
+            </section>
+            <div class="parallax"></div>
+
+            <section id="courses">
+                <div class="courses">
+                    <b><div class="subtitle2">✿ Courses️</div></b>
+                    <p class="text2">These are 3 courses that I took in Ajman University in which I learned a various amount of effective information.</p>
+
+                    <div class="scroll-container-wrapper">
+                        <button id="prevBtn">❮</button>
+
+                        <div class="scroll-container" id="courseSlider">
+                            <!-- Dynamic courses go here -->
+                        </div>
+
+                        <button id="nextBtn">❯</button>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax"></div>
+
+            <section id="contact">
+                <b><div class="subtitle2">✿ Contact Form</div></b>
+                <br> <br>
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-style">
+                            <label for="name"> 
+                                Name: 
+                                <input type="text" id="name" name="name">
+                            </label>
+                        </div>
+
+                        <div class="form-style">
+                            <label for="email"> 
+                                Email: 
+                                <input type="text" id="email" name="email">
+                            </label>
+                        </div>
+
+                        <div class="form-style">
+                            <label> 
+                                Comment: 
+                                <textarea name="commment"></textarea>
+                            </label>
+                        </div>
+
+                        <div id="formMessage" class="form-msg"></div>
+                        <br>
+                        <button type="submit"> Submit </button>
+
+                    </form>
+                </div>
+
+                <button id="scrollToTopBtn" title="Go to top">
+                    <img src="scrollupbutton.png" alt="Up" style="width: 65px; height: 65px;">
+                </button>
+
+            </section>
+            <br><br><br><br><br>
+
+            <footer>
+                <div class="footer-container">
+                    <p class="info">Email: 202310464@ajmanuni.ac.ae</p>
+                    <br>
+                    <p class="info">Phone No: 054 466 0470</p>
+                    <br>
+                    <b><p style="color:darkolivegreen; text-align:center; font-family: TextFont;">Thank you for visiting my webpage!</p></b>
+                    <br>
+                </div>
+            </footer>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Hello!</h2>
+                <p>Please enter your name:</p>
+                <input type="text" id="usernameInput" placeholder="Your name" />
+                <button onclick="submitName()">Submit</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="script2.js"></script>
+        <script src="script3.js"></script>
+    </body>
+</html>
